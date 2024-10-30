@@ -1,8 +1,12 @@
 const express = require('express');
+const path = require('path');
 const mid = require('./mid.js');
 const nedb = require('nedb');
 const router = express.Router();
-const db = new nedb({ filename: './data/db.json', autoload: true });
+const db = new nedb({
+  filename: path.join(process.cwd(), '/data/db.json'),
+  autoload: true
+});
 
 async function selectByMail(mail) {
   return new Promise(async resolve => {
