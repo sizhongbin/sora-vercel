@@ -1,3 +1,3 @@
-const server = require('../src/server.js'); ;
+import server from '../src/server.js';
 
-module.exports = server;
+export default server;

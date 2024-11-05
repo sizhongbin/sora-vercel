@@ -1,4 +1,6 @@
 .vercel/
 node_modules/
-data/
 test.js
+data.js
+.env.development.local
+tweego/

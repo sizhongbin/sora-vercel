@@ -4,13 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon src/server.js"
+    "test": "echo '\"vercel dev\" to test'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
-    "nedb": "^1.8.0"
+    "@supabase/supabase-js": "^2.46.1",
+    "express": "^4.21.1"
   }
 }

@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const server = express();
 server.use(express.json());
 
@@ -6,11 +6,7 @@ server.use(express.json());
 server.use(express.static('public'));
 
 // Routers
-const account = require('./routes/account.js');
+import account from './routes/account.js';
 server.use('/api/account', account);
 
-server.listen(8081, () =>
-  console.log(`Server running on: http://localhost:8081`)
-);
-
-module.exports = server;
+export default server;
