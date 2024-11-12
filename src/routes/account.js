@@ -128,6 +128,7 @@ router.post('/signin', async function (req, res) {
   }
   req.debug('Account selected');
 
+// Send account ID
   req.info(`200 Signed in. ID: ${results.data[0].id}`);
   res.send(results.data[0].id);
 });

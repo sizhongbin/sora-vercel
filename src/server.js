@@ -23,6 +23,8 @@ server.use((req, res, next) => {
 
 // Routers
 import account from './routes/account.js';
+import character from './routes/character.js';
 server.use('/api/account', account);
+server.use('/api/character', character);
 
 export default server;

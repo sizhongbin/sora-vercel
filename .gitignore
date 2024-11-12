@@ -4,3 +4,4 @@ test.js
 data.js
 .env.development.local
 tweego/
+prod-ca-2021.crt
