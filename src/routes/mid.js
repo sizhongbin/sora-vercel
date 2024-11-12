@@ -1,14 +1,4 @@
-// Check development env
-export function isDev() {
-  if (process.env.__VERCEL_DEV_RUNNING) return true;
-  else return false;
-}
 
-// Check development env
-export function env() {
-  if (process.env.__VERCEL_DEV_RUNNING) return 'DEV';
-  else return 'PROD';
-}
 
 // Check if body is empty
 export function isBodyEmpty(req, res, next) {
